@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+table,
+th,
+td {
+  border: 0px solid black;
+}
+#divyes > * {
+  padding: 5px;
+}
+
+.restart-btn {
+  padding: 5px;
+}
+
+#skins {
+    position: absolute;
+    top: 340px;
+    left: 290px;
+    display: flex;
+    flex-direction: row;
+}
+
+body {
+    height: 100vh;
+}
+
+#highscores {
+    position: absolute;
+    top: 1000px;
+    padding: 10px;
+}
+
+.fetched-highscore {
+    font-size: 25px;
+}

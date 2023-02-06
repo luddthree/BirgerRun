@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body onload="startGame()">
+    
+    <div id="myrestartbutton" style="position: absolute; z-index: 99999999999999; top: 100px;">
+      <button onclick="restartGame()" style="position: absolute; top:280px; left:387px;" class="restart-btn">Restart</button>
+      
+      <div id="skins">
+        <button onclick="newskin(), restartGame()" class="skins-btn" style="top:330px; left:380px; display: flex; justify-content: center; align-items: center; padding: 5px; margin: 10px;" >
+          <img src="skin1.png" height="50" width="50"   />
+        </button>
+        <button onclick="restartGame(), burgerskin()" class="skins-btn" style="top:330px; left: 310px; display: flex; justify-content: center; align-items: center; padding: 5px; margin: 10px;">
+            <img src="skin2.png" height="50" width="50"   />
+          </button>
+          <button onclick="newskinfalse(), restartGame()" class="skins-btn" style="top:330px; left:450px; display: flex; justify-content: center; align-items: center; padding: 5px; margin: 10px;">
+            <img src="skin.png" height="50" width="50"   />
+          </button> 
+        </div>
+        <div style="position: absolute; left: 300px; top: 450px;">
+          <div style="display: flex; flex-direction: row" id="divyes">
+            <input type="text" id="ja" placeholder="VeryCoolName123">
+            <button type="button" onclick="submitScore(), restartGame()">Submit</button style=" top: 500px; left:400px;">
+          </div>
+        </div>
+      </div>
+      <canvas id="canvas" width="800" height="1000" style="position: absolute; top:0; left:0; background-color: #65acee;"></canvas>
+      <div id="highscores">
+        <h1 style="padding-bottom: 5px;">Leaderboard:</h1>
+        <ol id="ordered-high">
+        </ol>
+      </div>
+      <script src="./index.js" defer></script>
+    </body>
+</html>
